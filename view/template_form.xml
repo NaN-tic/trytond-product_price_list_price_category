@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+     copyright notices and license terms. -->
+<data>
+    <xpath expr="/form/notebook/page[@id='general']/field[@name='category']"
+        position="after">
+        <newline/>
+        <label name="price_list_category"/>
+        <field name="price_list_category"/>
+    </xpath>
+</data>

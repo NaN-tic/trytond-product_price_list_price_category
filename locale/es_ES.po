@@ -1,0 +1,59 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:product.price_list.category,create_date:"
+msgid "Create Date"
+msgstr "Fecha de creación"
+
+msgctxt "field:product.price_list.category,create_uid:"
+msgid "Create User"
+msgstr "Usuario de creación"
+
+msgctxt "field:product.price_list.category,id:"
+msgid "ID"
+msgstr "Identificador"
+
+msgctxt "field:product.price_list.category,name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:product.price_list.category,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:product.price_list.category,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:product.price_list.category,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "field:product.price_list.line,price_list_category:"
+msgid "Price List Category"
+msgstr "Categoría de tarifa"
+
+msgctxt "field:product.template,price_list_category:"
+msgid "Price List Category"
+msgstr "Categoría de tarifa"
+
+msgctxt "model:ir.action,name:act_product_price_list_category"
+msgid "Price List Categories"
+msgstr "Categorías de tarifa"
+
+msgctxt "model:ir.ui.menu,name:menu_product_price_list_category"
+msgid "Price List Categories"
+msgstr "Categorías de tarifa"
+
+msgctxt "model:product.price_list.category,name:"
+msgid "Price List Category"
+msgstr "Categoría de tarifa"
+
+msgctxt "view:product.price_list.category:"
+msgid "Price List Categories"
+msgstr "Categorías de tarifa"
+
+msgctxt "view:product.price_list.category:"
+msgid "Price List Category"
+msgstr "Categoría de tarifa"

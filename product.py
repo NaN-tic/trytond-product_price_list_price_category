@@ -10,7 +10,7 @@ from trytond.modules.product.product import STATES, DEPENDS
 
 
 class PriceListCategory(ModelSQL, ModelView):
-    '''Price List Category'''
+    'Price List Category'
     __name__ = 'product.price_list.category'
     _order = [('name', 'ASC')]
     name = fields.Char('Name', translate=True, required=True)
@@ -28,9 +28,7 @@ class PriceList:
 
     def compute(self, party, product, unit_price, quantity, uom,
             pattern=None):
-        """
-        Add the product's price list category in pattern.
-        """
+        'Add the product\'s price list category in pattern.'
         if pattern is None:
             pattern = {}
 

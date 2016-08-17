@@ -86,6 +86,6 @@
         <!-- menus -->
         <menuitem id="menu_product_price_list_category"
             action="act_product_price_list_category"
-            parent="product_configuration.menu_configuration" sequence="50"/>
+            parent="product.menu_configuration" sequence="50"/>
     </data>
 </tryton>

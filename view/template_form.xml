@@ -4,7 +4,6 @@
 <data>
     <xpath expr="/form/notebook/page[@id='general']/field[@name='cost_price_method']"
         position="after">
-        <newline/>
         <label name="price_list_category"/>
         <field name="price_list_category"/>
     </xpath>

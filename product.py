@@ -21,15 +21,13 @@ class PriceListCategory(ModelSQL, ModelView):
             ]
 
 
-class Template:
-    __metaclass__ = PoolMeta
+class Template(metaclass=PoolMeta):
     __name__ = 'product.template'
     price_list_category = fields.Many2One('product.price_list.category',
         'Price List Category', states=STATES, depends=DEPENDS)
 
 
-class PriceList:
-    __metaclass__ = PoolMeta
+class PriceList(metaclass=PoolMeta):
     __name__ = 'product.price_list'
 
     def compute(self, party, product, unit_price, quantity, uom,
@@ -46,8 +44,7 @@ class PriceList:
             quantity, uom, pattern)
 
 
-class PriceListLine:
-    __metaclass__ = PoolMeta
+class PriceListLine(metaclass=PoolMeta):
     __name__ = 'product.price_list.line'
     price_list_category = fields.Many2One('product.price_list.category',
         'Price List Category')

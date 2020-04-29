@@ -2,7 +2,6 @@
 # copyright notices and license terms.
 from trytond.model import ModelSQL, ModelView, fields
 from trytond.pool import PoolMeta
-from trytond.modules.product.product import STATES, DEPENDS
 
 __all__ = ['PriceListCategory', 'Template', 'PriceList', 'PriceListLine']
 
@@ -24,7 +23,7 @@ class PriceListCategory(ModelSQL, ModelView):
 class Template(metaclass=PoolMeta):
     __name__ = 'product.template'
     price_list_category = fields.Many2One('product.price_list.category',
-        'Price List Category', states=STATES, depends=DEPENDS)
+        'Price List Category')
 
 
 class PriceList(metaclass=PoolMeta):

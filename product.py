@@ -26,6 +26,10 @@ class Template(metaclass=PoolMeta):
         'Price List Category')
 
 
+class Product(metaclass=PoolMeta):
+    __name__ = 'product.product'
+
+
 class PriceList(metaclass=PoolMeta):
     __name__ = 'product.price_list'
 

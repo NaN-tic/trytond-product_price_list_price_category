@@ -8,6 +8,7 @@ def register():
     Pool.register(
         product.PriceListCategory,
         product.Template,
+        product.Product,
         product.PriceList,
         product.PriceListLine,
         module='product_price_list_price_category', type_='model')

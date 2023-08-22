@@ -33,8 +33,7 @@ class Product(metaclass=PoolMeta):
 class PriceList(metaclass=PoolMeta):
     __name__ = 'product.price_list'
 
-    def compute(self, party, product, unit_price, quantity, uom,
-            pattern=None):
+    def compute(self, product, quantity, uom, pattern=None):
         'Add the product\'s price list category in pattern.'
         if pattern is None:
             pattern = {}
@@ -43,8 +42,7 @@ class PriceList(metaclass=PoolMeta):
         if product:
             pattern['price_list_category'] = (product.price_list_category and
                 product.price_list_category.id or None)
-        return super(PriceList, self).compute(party, product, unit_price,
-            quantity, uom, pattern)
+        return super(PriceList, self).compute(product, quantity, uom, pattern)
 
 
 class PriceListLine(metaclass=PoolMeta):
